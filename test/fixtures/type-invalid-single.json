@@ -1,0 +1,7 @@
+{
+  "title": "should throw on invalid type",
+  "schema": {
+    "type": "undefined"
+  },
+  "throws": true
+}

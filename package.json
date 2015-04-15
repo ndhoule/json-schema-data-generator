@@ -1,0 +1,33 @@
+{
+  "name": "json-schema-data-generator",
+  "version": "0.0.0",
+  "description": "Generate fake data from a JSON schema.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ndhoule/json-schema-data-generator.git"
+  },
+  "keywords": [
+    "json",
+    "schema",
+    "json-schema"
+  ],
+  "author": "Nathan Houle <nathan@nathanhoule.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ndhoule/json-schema-data-generator/issues"
+  },
+  "homepage": "https://github.com/ndhoule/json-schema-data-generator",
+  "dependencies": {
+    "chance": "^0.7.3",
+    "is": "^3.0.1",
+    "randexp": "^0.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^0.15.0",
+    "is": "^3.0.1",
+    "is-my-json-valid": "^2.10.1",
+    "lodash.times": "^3.0.0",
+    "mocha": "^2.1.0"
+  }
+}

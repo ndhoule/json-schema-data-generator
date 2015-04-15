@@ -1,0 +1,6 @@
+{
+  "title": "should generate handle arrays of types",
+  "schema": {
+    "type": ["string", "number"]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "title": "should throw on invalid type in an array",
+  "schema": {
+    "type": [
+      "undefined"
+    ]
+  },
+  "throws": true
+}

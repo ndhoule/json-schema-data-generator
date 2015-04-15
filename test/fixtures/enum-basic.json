@@ -1,0 +1,6 @@
+{
+  "title": "should work on enums",
+  "schema": {
+    "enum": [1, 10, 100]
+  }
+}

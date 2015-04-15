@@ -1,0 +1,6 @@
+{
+  "title": "should generate strings",
+  "schema": {
+    "type": "string"
+  }
+}

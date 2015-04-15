@@ -1,0 +1,6 @@
+{
+  "title": "should generate booleans",
+  "schema": {
+    "type": "boolean"
+  }
+}

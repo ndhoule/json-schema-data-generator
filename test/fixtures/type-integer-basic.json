@@ -1,0 +1,6 @@
+{
+  "title": "should generate integers",
+  "schema": {
+    "type": "integer"
+  }
+}

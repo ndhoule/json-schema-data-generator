@@ -1,0 +1,9 @@
+{
+  "title": "should generate a basic anyOf fixture",
+  "schema": {
+    "anyOf": [
+      { "type": "string" },
+      { "type": "integer" }
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "title": "should generate arrays",
+  "schema": {
+    "type": "array"
+  }
+}
