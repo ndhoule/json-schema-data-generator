@@ -2,6 +2,10 @@
 
 Generate fake data from a JSON schema.
 
+## Requirements
+
+- io.js 1.6+
+
 ## License
 
 Released under the [MIT license](LICENSE.md).
