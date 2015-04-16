@@ -25,7 +25,6 @@
   },
   "devDependencies": {
     "eslint": "^0.15.0",
-    "is": "^3.0.1",
     "is-my-json-valid": "^2.10.1",
     "lodash.times": "^3.0.0",
     "mocha": "^2.1.0"
