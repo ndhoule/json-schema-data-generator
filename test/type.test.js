@@ -66,5 +66,3 @@ describe('type', function() {
     createTest(fixture('type-invalid-multiple'));
   });
 });
-
-

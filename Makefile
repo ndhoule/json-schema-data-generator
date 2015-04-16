@@ -41,7 +41,7 @@ lint: node_modules
 	@$(ESLINT) $(SRCS) $(TESTS)
 .PHONY: lint
 
-test:
+test: lint
 	@$(MOCHA) \
 		--ui bdd \
 		--reporter spec \
