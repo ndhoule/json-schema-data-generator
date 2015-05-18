@@ -5,7 +5,9 @@
  */
 
 let Chance = require('chance');
+let ImplementationError = require('./lib/implementationError');
 let RandExp = require('randexp');
+let genericIterator = require('./lib/genericIterator');
 let getRandomElement = require('./lib/getRandomElement');
 let is = require('is');
 
@@ -14,31 +16,6 @@ let is = require('is');
  */
 
 let random = new Chance();
-
-/**
- *
- */
-let genericIterator = function*(obj) {
-  let keys = Object.keys(obj);
-
-  for (let key of keys) {
-    yield [key, obj[key]];
-  }
-};
-
-/**
- * ImplementationError
- *
- * @param {string} message
- * @return {ImplementationError}
- */
-let ImplementationError = function(message) {
-  Error.call(this);
-  this.name = 'ImplementationError';
-  this.message = message || 'Not yet implemented';
-};
-
-ImplementationError.prototype = Object.create(Error.prototype);
 
 let generateRandomString = function(schema) {
   let minLength = schema.minLength || 0;
@@ -59,13 +36,10 @@ let generateRandomString = function(schema) {
 
 let generateRandomObject = function(schema) {
   let result = {};
-  let props = schema.properties;
 
-  if (props) {
-    for (let kv of genericIterator(props)) {
-      let key = kv[0];
-      let value = kv[1];
-      result[key] = generate(value);
+  if (schema.properties) {
+    for (let kv of genericIterator(schema.properties)) {
+      result[kv[0]] = generate(kv[1]);
     }
   }
 
@@ -132,6 +106,7 @@ let generate = function(schema) {
     return generateRandomValue(is.array(type) ? getRandomElement(type) : type, schema);
   }
 
+  // Not yet implemented
   throw new ImplementationError();
 };
 

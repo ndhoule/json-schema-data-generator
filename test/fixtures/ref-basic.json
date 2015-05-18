@@ -1,0 +1,15 @@
+{
+  "title": "should generate arrays",
+  "schema": {
+    "definitions": {
+      "boringString": {
+        "type": "string"
+      }
+    },
+    "properties": {
+      "str": {
+        "$ref": "#/definitions/boringString"
+      }
+    }
+  }
+}
